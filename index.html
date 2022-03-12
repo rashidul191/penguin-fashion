@@ -29,9 +29,83 @@
     </script>
   </head>
   <body>
+
+    
     <!-- Header Section Start -->
-    <header class="bg-penguin py-16">
-      <section class="container mx-auto sm:flex items-center justify-around">
+    <header class="bg-penguin">
+      <!-- Navigation Section Start -->
+      <nav class="flex items-center justify-between flex-wrap p-6">
+        <div class="flex items-center flex-shrink-0 text-black mr-6">
+          <!-- <svg
+            class="fill-current h-8 w-8 mr-2"
+            width="54"
+            height="54"
+            viewBox="0 0 54 54"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"
+            />
+          </svg> -->
+          <span class="font-semibold text-xl tracking-tight"><img class="w-60" src="images/icons/Group 33072.png" alt=""></span>
+        </div>
+        <div class="block lg:hidden">
+          <button
+            class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-teal-500 hover:border-white"
+          >
+            <svg
+              class="fill-current h-3 w-3"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+          <div class="text-sm lg:flex-grow">
+            <a
+              href="#home"
+              class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-teal-500 mr-4"
+            >
+              Home
+            </a>
+            <a
+              href="#woman-jacket"
+              class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-teal-500 mr-4"
+            >
+              Woman Jacket
+            </a>
+            <a
+              href="#man-jacket"
+              class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-teal-500"
+            >
+              Man Jacket
+            </a>
+          </div>
+          <div>
+            <a
+              href="#"
+              class="inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-teal-500 hover:bg-white hover:border-teal-500 mr-5 mt-4 lg:mt-0"
+              >Log In</a
+            >
+
+            <a
+              href="#"
+              class="inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-teal-500 hover:bg-white hover:border-teal-500 mt-4 lg:mt-0"
+              >Sign In</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- Navigation Section Start -->
+
+      <!-- Top Section Start -->
+      <section
+        id="home"
+        class="container mx-auto sm:flex items-center justify-around pt-8 pb-16"
+      >
         <div class="space-y-4 text-center sm:text-left px-4 sm:px-0">
           <h1 class="text-2xl sm:text-5xl uppercase font-bold">
             <span class="text-[#fabe4c]">Be the penguins</span><br />Of winter
@@ -52,11 +126,12 @@
           <img class="w-1/2 sm:w-full" src="images/model.png" alt="" />
         </div>
       </section>
+      <!-- Top Section End -->
     </header>
     <!-- Header Section End -->
 
     <!-- Woman Jacket Section Start -->
-    <main class="container mx-auto my-10">
+    <main id="woman-jacket" class="container mx-auto my-10">
       <h1 class="text-4xl font-bold text-center sm:text-left my-10">
         Woman Jacket
       </h1>
@@ -125,7 +200,7 @@
     <!-- Woman Jacket Section End -->
 
     <!-- Man Jacket Section Start -->
-    <main class="container mx-auto my-10">
+    <main id="man-jacket" class="container mx-auto my-10">
       <h1 class="text-4xl font-bold text-center sm:text-left my-10">
         Man Jacket
       </h1>
@@ -193,6 +268,7 @@
     </main>
     <!-- Man Jacket Section End -->
 
+    <!-- Customer Question Section Start -->
     <section class="container mx-auto py-10">
       <div class="grid sm:grid-cols-2 gap-10">
         <div>
@@ -247,5 +323,12 @@
         </div>
       </div>
     </section>
+    <!-- Customer Question Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="bg-black text-white text-center py-10 mt-5">
+      <p>&copy; 2022 Penguin Fashion with Tailwind CSS <br> by <a class="text-orange-400" href="https://github.com/rashidul191">Rashidul Islam</a></p>
+    </footer>
+    <!-- Footer Section End -->
   </body>
 </html>
